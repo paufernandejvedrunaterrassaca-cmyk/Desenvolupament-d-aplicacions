@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Activiat 3 xml</string>
+    <string name="imc_name">IMC CALCULATOR</string>
+    <string name="male">HOMBRE</string>
+    <string name="female">MUJER</string>
 </resources>
