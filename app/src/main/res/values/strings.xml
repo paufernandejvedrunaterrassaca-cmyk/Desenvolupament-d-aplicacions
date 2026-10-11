@@ -2,4 +2,7 @@
     <string name="imc_name">IMC CALCULATOR</string>
     <string name="male">HOMBRE</string>
     <string name="female">MUJER</string>
+    <string name="height">ALTURA</string>
+    <string name="weight">PESO</string>
+    <string name="weight1">PESO</string>
 </resources>
