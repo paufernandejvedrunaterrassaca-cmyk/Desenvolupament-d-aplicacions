@@ -22,4 +22,11 @@
 
     <string name="title_obesidad">Obesity</string>
     <string name="description_obesidad">You are WAY ABOVE your ideal weight.</string>
+
+    <string name="height_initial">120 cm</string>
+    <string name="accessibility_select_height">Select height in centimeters</string>
+    <string name="accessibility_increase_weight">Increase weight</string>
+    <string name="accessibility_decrease_weight">Decrease weight</string>
+    <string name="accessibility_increase_age">Increase age</string>
+    <string name="accessibility_decrease_age">Decrease age</string>
 </resources>

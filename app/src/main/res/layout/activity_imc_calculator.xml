@@ -31,16 +31,15 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginBottom="8dp"
+                android:contentDescription="@null"
                 app:tint="@color/white"
-                android:src="@drawable/ic_male">
-            </ImageView>
-            
+                android:src="@drawable/ic_male" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/male"
-                android:textColor="@color/title_text">
-            </TextView>
+                android:textColor="@color/title_text" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -66,16 +65,15 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginBottom="8dp"
+                android:contentDescription="@null"
                 app:tint="@color/white"
-                android:src="@drawable/ic_female">
-            </ImageView>
+                android:src="@drawable/ic_female" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/female"
-                android:textColor="@color/title_text">
-            </TextView>
+                android:textColor="@color/title_text" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -102,25 +100,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text = "@string/height"
-                android:textColor="@color/title_text"/>
+                android:text="@string/height"
+                android:textColor="@color/title_text" />
+
             <TextView
                 android:id="@+id/tvHeight"
-                android:text="120 cm"
+                android:text="@string/height_initial"
                 android:textSize="38sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <com.google.android.material.slider.RangeSlider
                 android:id="@+id/rsHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/accessibility_select_height"
                 android:stepSize="1"
                 android:valueFrom="120"
-                android:valueTo="200"
-                />
+                android:valueTo="200" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.cardview.widget.CardView>
@@ -142,11 +142,13 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text = "@string/weight"
-                android:textColor="@color/title_text"/>
+                android:text="@string/weight"
+                android:textColor="@color/title_text" />
+
             <TextView
                 android:id="@+id/tvWeight"
                 tools:text="170"
@@ -154,7 +156,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -165,20 +167,21 @@
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnSubtractWeight"
                     android:layout_width="wrap_content"
-                    android:src="@drawable/ic_subtract"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/ic_subtract"
+                    android:contentDescription="@string/accessibility_decrease_weight"
                     app:tint="@color/white"
-                    android:backgroundTint="@color/backgorund_fab"
-                    android:layout_marginEnd="16dp"/>
-
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginEnd="16dp" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusWeight"
                     android:layout_width="wrap_content"
-                    android:src="@drawable/ic_plus"
-                    app:tint="@color/white"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/backgorund_fab"/>
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="@string/accessibility_increase_weight"
+                    app:tint="@color/white"
+                    android:backgroundTint="@color/purple_500" />
 
             </LinearLayout>
 
@@ -206,8 +209,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text = "@string/age"
-                android:textColor="@color/title_text"/>
+                android:text="@string/age"
+                android:textColor="@color/title_text" />
+
             <TextView
                 android:id="@+id/tvAge"
                 tools:text="18"
@@ -215,49 +219,49 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
+
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnSubtractAge"
                     android:layout_width="wrap_content"
-                    android:src="@drawable/ic_subtract"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/ic_subtract"
+                    android:contentDescription="@string/accessibility_decrease_age"
                     app:tint="@color/white"
-                    android:backgroundTint="@color/backgorund_fab"
-                    android:layout_marginEnd="16dp"/>
-
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginEnd="16dp" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusAge"
                     android:layout_width="wrap_content"
-                    android:src="@drawable/ic_plus"
-                    app:tint="@color/white"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/backgorund_fab"/>
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="@string/accessibility_increase_age"
+                    app:tint="@color/white"
+                    android:backgroundTint="@color/purple_500" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
-
 
     </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="0dp"
+        android:layout_height="80dp"
         android:text="@string/calculate"
         android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_height="80dp"
-        android:backgroundTint="@color/purple_500"
-        />
+        android:backgroundTint="@color/purple_500" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
