@@ -1,8 +1,25 @@
 <resources>
     <string name="imc_name">IMC CALCULATOR</string>
-    <string name="male">HOMBRE</string>
-    <string name="female">MUJER</string>
-    <string name="height">ALTURA</string>
-    <string name="weight">PESO</string>
-    <string name="weight1">PESO</string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
+    <string name="height">HEIGHT</string>
+    <string name="weight">WEIGHT</string>
+    <string name="age">AGE</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="recalculate">RE-CALCULATE</string>
+    <string name="result">Your Results</string>
+
+    <string name="error">Error</string>
+
+    <string name="title_bajo_peso">Low weight</string>
+    <string name="description_bajo_peso">You are below your ideal weight.</string>
+
+    <string name="title_normal">Normal</string>
+    <string name="description_normal">Normal</string>
+
+    <string name="title_sobrepeso">Overweight</string>
+    <string name="description_sobrepeso">You are above your ideal weight.</string>
+
+    <string name="title_obesidad">Obesity</string>
+    <string name="description_obesidad">You are WAY ABOVE your ideal weight.</string>
 </resources>
