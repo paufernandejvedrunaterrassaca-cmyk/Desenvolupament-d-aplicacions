@@ -249,7 +249,7 @@
 
     <Button
         android:id="@+id/btnCalculate"
-        android:layout_width="1000dp"
+        android:layout_width="0dp"
         android:text="@string/calculate"
         android:textStyle="bold"
         android:textSize="20sp"
